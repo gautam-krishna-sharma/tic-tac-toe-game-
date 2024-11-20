@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f06, #4a90e2);
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  #game-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #player-selection {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #player-selection input,
+  #player-selection button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+  }
+  
+  #player-selection button {
+    color: #fff;
+    background-color: #4a90e2;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #player-selection button:hover {
+    background-color: #f06;
+    transform: scale(1.05);
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #4a90e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: #f06;
+    transform: scale(1.05);
+  }
+  
+  #status {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  #restartButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #restartButton:hover {
+    background-color: #f06;
+    transform: scale(1.05);
+  }
+  
